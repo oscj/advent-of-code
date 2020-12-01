@@ -14,7 +14,7 @@ def find_nums_that_add_to_2020_triplets_bf(lst):
     return -1
 
 # Brute Force - pairs
-def find_nums_that_add_to_2020_triplets_bf(lst):  
+def find_nums_that_add_to_2020_pairs_bf(lst):  
     for i in range(len(lst)):   
         for j in range(i + 1, len(lst)):
             if lst[i] + lst[j] == 2020:
