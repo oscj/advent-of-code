@@ -44,6 +44,7 @@ def get_valid_passwords_p2(psswd_list):
         first_c = attempted_psswd[first_index] 
         second_c =  attempted_psswd[last_index] 
         
+        # ~(p ^ q) ^ (p v q)
         if (not (first_c == tartget_char and second_c == tartget_char)) and (first_c == tartget_char or second_c == tartget_char):
             valid_psswds.append(psswd)
 
